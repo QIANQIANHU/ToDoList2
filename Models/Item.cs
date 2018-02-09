@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System;
 
 namespace ToDoList.Models
 {
@@ -9,23 +8,25 @@ namespace ToDoList.Models
     private int _id;
     private static List<Item> _instances = new List<Item> {};
 
-    public Item (string description)
+    public Item(string description)
     {
       _description = description;
       _instances.Add(this);
-     _id = _instances.Count;
+      _id = _instances.Count;
     }
+
     public string GetDescription()
     {
       return _description;
     }
+
     public void SetDescription(string newDescription)
     {
       _description = newDescription;
-
+    }
     public int GetId()
     {
-    return _id;
+      return _id;
     }
     public static List<Item> GetAll()
     {
