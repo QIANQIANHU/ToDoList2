@@ -27,11 +27,11 @@ namespace ToDoList.Controllers
           List<Item> allItems = Item.GetAll();
           return View("Index", allItems);
         }
-        [HttpPost("/items/delete")]
-        public ActionResult DeleteAll()
-        {
-          Item.ClearAll();
-          return View();
-        }
+        // [HttpPost("/items/delete")]
+        // public ActionResult DeleteAll()
+        // {
+        //   Item.ClearAll();
+        //   return View();
+        // }
     }
 }
